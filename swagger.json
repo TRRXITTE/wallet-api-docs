@@ -2075,7 +2075,7 @@
             "amount": 1234
           },
           {
-            "address": "TRv3r4N3Jbk7FApJXN3M66xWWr8FhbAiwGdEJC2wF1hTKGxnwUzhH8pFydrruvdtPSVTCMUKWGdSrAitgnEVFp8356HCkKHZG",
+            "address": "iETRXr4N3Jbk7FApJXN3M66xWWr8FhbAiwGdEJC2wF1hTKGxnwUzhH8pFydrruvdtPSVTCMUKWGdSrAitgnEVFp8356HCkKHZG",
             "amount": 5000
           }
         ],
@@ -2204,7 +2204,7 @@
           "properties": {
             "address": {
               "type": "string",
-              "example": "TRv3ErzkY2CiAj6DL8isYELmTec8Z9BK56oL1KMhjMRSMyfwYaogKg17hQKC23CHPBcHqrHHGzdRYUk3HGqkMwXbHg3Dy2rH",
+              "example": "iETRXErzkY2CiAj6DL8isYELmTec8Z9BK56oL1KMhjMRSMyfwYaogKg17hQKC23CHPBcHqrHHGzdRYUk3HGqkMwXbHg3Dy2rH",
               "description": "The receiving address of this transfer, or the sending address if the amount is negative"
             },
             "amount": {
