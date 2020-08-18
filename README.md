@@ -3,7 +3,7 @@ This is a very lightly tweaked version of https://github.com/swagger-api/swagger
 
 ## Running
 
-Visit https://traaittplatform.github.io/wallet-api-docs/
+Visit https://trrxitte.github.io/wallet-api-docs/
 
 Or, if developing locally, simply open `index.html` in your web browser
 
