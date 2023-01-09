@@ -1328,7 +1328,7 @@
                 "amount": {
                   "type": "number",
                   "format": "uint64",
-                  "description": "The amount of TR to send (in atomic units)",
+                  "description": "The amount of XTCASH to send (in atomic units)",
                   "example": 1234
                 },
                 "paymentID": {
@@ -1403,7 +1403,7 @@
                 "amount": {
                   "type": "number",
                   "format": "uint64",
-                  "description": "The amount of TR to send (in atomic units)",
+                  "description": "The amount of XTCASH to send (in atomic units)",
                   "example": 1234
                 },
                 "paymentID": {
@@ -2037,9 +2037,9 @@
               "example": "493f522e1f46b5c07f753ed28dc2db9da5f571f28c2fa54f4c9a0a7941b09d0b"
             },
             "address": {
-              "description": "99 char public TR address",
+              "description": "99 char public XTCASH address",
               "type": "string",
-              "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
+              "example": "cashFyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
             }
           }
         }
@@ -2096,7 +2096,7 @@
               "amount": {
                 "type": "number",
                 "format": "uint64",
-                "description": "The amount of TR to send (in atomic units)",
+                "description": "The amount of XTCASH to send (in atomic units)",
                 "example": 1234
               }
             }
@@ -2228,7 +2228,7 @@
       "name": "address",
       "required": true,
       "type": "string",
-      "description": "The address to use for this operation. Should be a valid, 99 character TR address."
+      "description": "The address to use for this operation. Should be a valid, 98 character XTCASH address."
     },
     "paymentID": {
       "in": "path",
