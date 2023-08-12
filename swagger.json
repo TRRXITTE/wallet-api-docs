@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "<img src=\"logo.png\" style=\"display: block; margin-left: auto; margin-right: auto; width: 70%;\">\n\n# Intro\n\nThis website documents the API methods available for the `walletAPI` program.\n\nThe default API url is [127.0.0.1:8447](http://127.0.0.1:8447).\n\nNote that this program is distinct from `XTCASHservice`, which uses a different API.\nThe api docs for `XTCASHservice` can be found [here](https://documentation.trrxitte.com/developer/api/Legacy-Wallet-RPC-API/).\n\nWhen using the docs, be aware that you can click the 'Model' tab to get a description of all available parameters, their types, and an example value.\n\n# Initialization\n\n* Start by launching the `walletAPI` program.\n* From a terminal (or via a programming language):\n\n```\n./walletAPI --rpc-password somepassword\n```\n\n* Or if you're on windows:\n\n```\nwalletAPI.exe --rpc-password somepassword\n```\n\n* An RPC password is always required, and you should then provide this password with every request to the API, in the `X-API-KEY` header.\n\n* If you want to see the available configuration options for the `walletAPI`, launch the program with:\n```\n./walletAPI --help\n```\n\n* Note that you cannot generate/open a wallet via the command line, only via the API.\n  This is by design to prevent application developers having to parse command line output.\n\n# Try it Out\n\nIf you want to test walletAPI out without doing any programming, you can use the 'Try it out' section in swagger.\n* Start by launching your wallet with CORS enabled:\n\n```\n./walletAPI --rpc-password \"mypassword\" --enable-cors \"*\"\n```\n\n* Click the 'Authorize' button in Swagger, and type in the RPC password you just chose - in this case, \"mypassword\", and click 'Authorize'.\n* Click a method to expand it, then click the 'Try it Out' button.\n* You can modify the parameters you want to send here, and then hit 'Execute' to send the request.\n* Note that this may not work in Firefox, I had to use Chrome to get it to work. F12 (developer console) may help diagnose CORS issues.\n\n# API Wrappers\n\nFinally, whilst you may send raw HTTP requests to the API url, you may be interested in an API/RPC wrapper.\n\nThese can be generated for many languages, by using the `Generate Client` option in the top menu.\nBe patient, this can take some time to complete.\n\n# Support\n\nIf you are having issues, please stop by our [discord](http://chat.traaittplatform.lol) and visit the `#dev_learning` channel for assistance.",
+    "description": "<img src=\"logo.png\" style=\"display: block; margin-left: auto; margin-right: auto; width: 70%;\">\n\n# Intro\n\nThis website documents the API methods available for the `walletAPI` program.\n\nThe default API url is [127.0.0.1:8440](http://127.0.0.1:8440).\n\nNote that this program is distinct from `XTCASHservice`, which uses a different API.\nThe api docs for `XTCASHservice` can be found [here](https://documentation.trrxitte.com/developer/api/Legacy-Wallet-RPC-API/).\n\nWhen using the docs, be aware that you can click the 'Model' tab to get a description of all available parameters, their types, and an example value.\n\n# Initialization\n\n* Start by launching the `walletAPI` program.\n* From a terminal (or via a programming language):\n\n```\n./walletAPI --rpc-password somepassword\n```\n\n* Or if you're on windows:\n\n```\nwalletAPI.exe --rpc-password somepassword\n```\n\n* An RPC password is always required, and you should then provide this password with every request to the API, in the `X-API-KEY` header.\n\n* If you want to see the available configuration options for the `walletAPI`, launch the program with:\n```\n./walletAPI --help\n```\n\n* Note that you cannot generate/open a wallet via the command line, only via the API.\n  This is by design to prevent application developers having to parse command line output.\n\n# Try it Out\n\nIf you want to test walletAPI out without doing any programming, you can use the 'Try it out' section in swagger.\n* Start by launching your wallet with CORS enabled:\n\n```\n./walletAPI --rpc-password \"mypassword\" --enable-cors \"*\"\n```\n\n* Click the 'Authorize' button in Swagger, and type in the RPC password you just chose - in this case, \"mypassword\", and click 'Authorize'.\n* Click a method to expand it, then click the 'Try it Out' button.\n* You can modify the parameters you want to send here, and then hit 'Execute' to send the request.\n* Note that this may not work in Firefox, I had to use Chrome to get it to work. F12 (developer console) may help diagnose CORS issues.\n\n# API Wrappers\n\nFinally, whilst you may send raw HTTP requests to the API url, you may be interested in an API/RPC wrapper.\n\nThese can be generated for many languages, by using the `Generate Client` option in the top menu.\nBe patient, this can take some time to complete.\n\n# Support\n\nIf you are having issues, please stop by our [discord](http://chat.traaittplatform.lol) and visit the `#dev_learning` channel for assistance.",
     "version": "1.0.0",
     "title": "walletAPI"
   },
@@ -273,7 +273,7 @@
                 "scanHeight": {
                   "description": "The block height to start scanning from",
                   "type": "integer",
-                  "example": 300000,
+                  "example": 100000,
                   "default": 0,
                   "format": "int64"
                 }
@@ -324,7 +324,7 @@
                     "nodeAddress": {
                       "type": "string",
                       "description": "The address the node fee gets sent to, if non zero",
-                      "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
+                      "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                     }
                   }
                 }
@@ -393,7 +393,7 @@
                 "address": {
                   "type": "string",
                   "description": "The address to validate",
-                  "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
+                  "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                 }
               }
             }
@@ -646,7 +646,7 @@
                     "type": "string"
                   },
                   "example": [
-                    "TRv2cT32cZbF6KvnU69LNxptYFBMCKs3yqLmCAVjPW4rNTExpB7RpGKGJEkD1E9MVmM8SUUJfUh42Ajo1Hgz5wUN6budvzaq"
+                    "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                   ]
                 }
               }
@@ -711,7 +711,7 @@
                 "address": {
                   "type": "string",
                   "description": "The primary address",
-                  "example": "TRv2cT32cZbF6KvnU69LNxptYFBMCKs3yqLmCAVjPW4rNTExpB7RpGKGJEkD1E9MVmM8SUUJfUh42Ajo1Hgz5wUN6budvzaq"
+                  "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                 }
               }
             }
@@ -743,7 +743,7 @@
                 "address": {
                   "type": "string",
                   "description": "The created address",
-                  "example": "TRv2cT32cZbF6KvnU69LNxptYFBMCKs3yqLmCAVjPW4rNTExpB7RpGKGJEkD1E9MVmM8SUUJfUh42Ajo1Hgz5wUN6budvzaq"
+                  "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                 },
                 "privateSpendKey": {
                   "type": "string",
@@ -793,7 +793,7 @@
                 "scanHeight": {
                   "description": "The daemon port to sync the wallet with",
                   "type": "integer",
-                  "example": 300000,
+                  "example": 100000,
                   "default": 0,
                   "format": "uint64"
                 },
@@ -815,7 +815,7 @@
                 "address": {
                   "type": "string",
                   "description": "The created address",
-                  "example": "TRv2cT32cZbF6KvnU69LNxptYFBMCKs3yqLmCAVjPW4rNTExpB7RpGKGJEkD1E9MVmM8SUUJfUh42Ajo1Hgz5wUN6budvzaq"
+                  "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                 }
               }
             }
@@ -855,7 +855,7 @@
                 "scanHeight": {
                   "description": "The daemon port to sync the wallet with",
                   "type": "integer",
-                  "example": 300000,
+                  "example": 100000,
                   "default": 0,
                   "format": "uint64"
                 },
@@ -877,7 +877,7 @@
                 "address": {
                   "type": "string",
                   "description": "The created address",
-                  "example": "TRv2cT32cZbF6KvnU69LNxptYFBMCKs3yqLmCAVjPW4rNTExpB7RpGKGJEkD1E9MVmM8SUUJfUh42Ajo1Hgz5wUN6budvzaq"
+                  "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                 }
               }
             }
@@ -920,7 +920,7 @@
                 "integratedAddress": {
                   "type": "string",
                   "description": "The integrated address",
-                  "example": "TRuxiNXhy96RNDkv2jx29jL7GdTWYBmA4r7K8KRpDWA4hJJnTZEgFHFzxqvmBLtz94oF4uPokQdHbV9j2g7S6LA4hKPvjZEFS2CiAj6DL8isYELmTec8Z9BK56oL1KMhjMRSMyfwYaogKg17hQKC23CHPBcHqrHHGzdRYUk3HGqkMwXbHg3BoCpXD"
+                  "example": "cashiNXhy96RNDkv2jx29jL7GdTWYBmA4r7K8KRpDWA4hJJnTZEgFHFzxqvmBLtz94oF4uPokQdHbV9j2g7S6LA4hKPvjZEFS2CiAj6DL8isYELmTec8Z9BK56oL1KMhjMRSMyfwYaogKg17hQKC23CHPBcHqrHHGzdRYUk3HGqkMwXbHg3BoCpXD"
                 }
               }
             }
@@ -1323,7 +1323,7 @@
                 "destination": {
                   "type": "string",
                   "description": "The address to send funds to",
-                  "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
+                  "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                 },
                 "amount": {
                   "type": "number",
@@ -1398,7 +1398,7 @@
                 "destination": {
                   "type": "string",
                   "description": "The address to send funds to",
-                  "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
+                  "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                 },
                 "amount": {
                   "type": "number",
@@ -1696,14 +1696,14 @@
                 "type": "array",
                 "items": {
                   "type": "string",
-                  "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
+                  "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                 },
                 "description": "The addresses to draw funds for the transaction from (must be an address in this container)"
               },
               "destination": {
                 "type": "string",
                 "description": "The destination address to send funds to. Must exist in this wallet.",
-                "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
+                "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
               }
             }
           }
@@ -1862,7 +1862,7 @@
                   "address": {
                     "type": "string",
                     "description": "The address this balance belongs to",
-                    "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
+                    "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
                   }
                 }
               }
@@ -1968,7 +1968,7 @@
             "scanHeight": {
               "description": "The daemon port to sync the wallet with",
               "type": "integer",
-              "example": 300000,
+              "example": 100000,
               "default": 0,
               "format": "uint64"
             }
@@ -2071,11 +2071,11 @@
       "example": {
         "destinations": [
           {
-            "address": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW",
+            "address": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF",
             "amount": 1234
           },
           {
-            "address": "iETRXr4N3Jbk7FApJXN3M66xWWr8FhbAiwGdEJC2wF1hTKGxnwUzhH8pFydrruvdtPSVTCMUKWGdSrAitgnEVFp8356HCkKHZG",
+            "address": "cashQmjcTGzDqRSufP74GwWTLt11E3saaeRg3LVt5AgEGAiYhpS1yTZA1ti7wVkk7vaQgvKifLvCx4SxwDqfR1EZAYL7yr4WD3",
             "amount": 5000
           }
         ],
@@ -2091,7 +2091,7 @@
               "address": {
                 "type": "string",
                 "description": "The address to send to",
-                "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
+                "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
               },
               "amount": {
                 "type": "number",
@@ -2125,7 +2125,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW",
+            "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF",
             "description": "The addresses to draw funds for the transaction from (must be an address in this container). Defaults to every address.",
             "default": "Every address in the container."
           }
@@ -2139,7 +2139,7 @@
         "changeAddress": {
           "type": "string",
           "description": "The address in this wallet to return any 'change' to if we have to spend more than the requested amount. Defaults to primary address.",
-          "example": "TRv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW",
+          "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF",
           "default": "Wallet container primary address"
         },
         "unlockTime": {
@@ -2204,7 +2204,7 @@
           "properties": {
             "address": {
               "type": "string",
-              "example": "iETRXErzkY2CiAj6DL8isYELmTec8Z9BK56oL1KMhjMRSMyfwYaogKg17hQKC23CHPBcHqrHHGzdRYUk3HGqkMwXbHg3Dy2rH",
+              "example": "cashQmjcTGzDqRSufP74GwWTLt11E3saaeRg3LVt5AgEGAiYhpS1yTZA1ti7wVkk7vaQgvKifLvCx4SxwDqfR1EZAYL7yr4WD3",
               "description": "The receiving address of this transfer, or the sending address if the amount is negative"
             },
             "amount": {
@@ -2218,7 +2218,7 @@
       }
     }
   },
-  "host": "127.0.0.1:8447",
+  "host": "127.0.0.1:8440",
   "schemes": [
     "http"
   ],
