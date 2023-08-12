@@ -1696,7 +1696,7 @@
                 "type": "array",
                 "items": {
                   "type": "string",
-                  "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF"
+                  "example": "cashQmjcTGzDqRSufP74GwWTLt11E3saaeRg3LVt5AgEGAiYhpS1yTZA1ti7wVkk7vaQgvKifLvCx4SxwDqfR1EZAYL7yr4WD3"
                 },
                 "description": "The addresses to draw funds for the transaction from (must be an address in this container)"
               },
@@ -2125,7 +2125,7 @@
           "type": "array",
           "items": {
             "type": "string",
-            "example": "cashKdCEq5U7W2QDS5ffMETf1smoKLBm3C1GMYvPdEVUU9LKr1uDFrLNPkmfKgzcTcB4ASsypziCeVQ5iqkzC7fZ1pDDLSxgZF",
+            "example": "cashQmjcTGzDqRSufP74GwWTLt11E3saaeRg3LVt5AgEGAiYhpS1yTZA1ti7wVkk7vaQgvKifLvCx4SxwDqfR1EZAYL7yr4WD3",
             "description": "The addresses to draw funds for the transaction from (must be an address in this container). Defaults to every address.",
             "default": "Every address in the container."
           }
