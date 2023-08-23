@@ -920,7 +920,7 @@
                 "integratedAddress": {
                   "type": "string",
                   "description": "The integrated address",
-                  "example": "cashiNXhy96RNDkv2jx29jL7GdTWYBmA4r7K8KRpDWA4hJJnTZEgFHFzxqvmBLtz94oF4uPokQdHbV9j2g7S6LA4hKPvjZEFS2CiAj6DL8isYELmTec8Z9BK56oL1KMhjMRSMyfwYaogKg17hQKC23CHPBcHqrHHGzdRYUk3HGqkMwXbHg3BoCpXD"
+                  "example": "XT1rLW3718t9Q5YGFvmPJM9bdxiGrWdWDAQB3oFEsCWsA4mhGYYhz1FAEkA9DVJfH79EEY7s1CfA8AGHsqZSUw5U9GDxi3YiLD88AYhX6eFgTQjXPRECfzLnRQyg3f2Mt5bMNPDhs5k6hw5Wxq31Hn8SVb8p83a1NJ8rfCPmbmsRzDWM2Z2gE6NMq"
                 }
               }
             }
@@ -1328,7 +1328,7 @@
                 "amount": {
                   "type": "number",
                   "format": "uint64",
-                  "description": "The amount of XTCASH to send (in atomic units)",
+                  "description": "The amount of XTE to send (in atomic units)",
                   "example": 1234
                 },
                 "paymentID": {
@@ -1403,7 +1403,7 @@
                 "amount": {
                   "type": "number",
                   "format": "uint64",
-                  "description": "The amount of XTCASH to send (in atomic units)",
+                  "description": "The amount of XTE to send (in atomic units)",
                   "example": 1234
                 },
                 "paymentID": {
@@ -1696,7 +1696,7 @@
                 "type": "array",
                 "items": {
                   "type": "string",
-                  "example": "cashQmjcTGzDqRSufP74GwWTLt11E3saaeRg3LVt5AgEGAiYhpS1yTZA1ti7wVkk7vaQgvKifLvCx4SxwDqfR1EZAYL7yr4WD3"
+                  "example": "XT2LD4w2FWZNcRCG4cYxfu8Bd1GjVziQ9Gv8MpK8NdXXg7uwJsbfXoYaGuJT2wqfMPapcjj4gmVasKvXLNnYxrDR1tVjhwwcP"
                 },
                 "description": "The addresses to draw funds for the transaction from (must be an address in this container)"
               },
@@ -2037,9 +2037,9 @@
               "example": "493f522e1f46b5c07f753ed28dc2db9da5f571f28c2fa54f4c9a0a7941b09d0b"
             },
             "address": {
-              "description": "99 char public XTCASH address",
+              "description": "97 char public XTE or 98 char XTCASH address",
               "type": "string",
-              "example": "cashFyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW"
+              "example": "XT3QqCo8oqL8AYhX6eFgTQjXPRECfzLnRQyg3f2Mt5bMNPDhs5k6hw5Wxq31Hn8SVb8p83a1NJ8rfCPmbmsRzDWM2Z2c9JSBe"
             }
           }
         }
@@ -2058,8 +2058,8 @@
           "description": "The daemon port to sync the wallet with",
           "type": "integer",
           "format": "uint16",
-          "default": 14486,
-          "example": 14486
+          "default": 14485,
+          "example": 14485
         }
       }
     },
@@ -2075,7 +2075,7 @@
             "amount": 1234
           },
           {
-            "address": "cashQmjcTGzDqRSufP74GwWTLt11E3saaeRg3LVt5AgEGAiYhpS1yTZA1ti7wVkk7vaQgvKifLvCx4SxwDqfR1EZAYL7yr4WD3",
+            "address": "XT2LD4w2FWZNcRCG4cYxfu8Bd1GjVziQ9Gv8MpK8NdXXg7uwJsbfXoYaGuJT2wqfMPapcjj4gmVasKvXLNnYxrDR1tVjhwwcP",
             "amount": 5000
           }
         ],
@@ -2096,7 +2096,7 @@
               "amount": {
                 "type": "number",
                 "format": "uint64",
-                "description": "The amount of XTCASH to send (in atomic units)",
+                "description": "The amount of XTE to send (in atomic units)",
                 "example": 1234
               }
             }
@@ -2114,18 +2114,11 @@
           "example": 2430,
           "format": "uint64"
         },
-        "feePerByte": {
-          "type": "number",
-          "description": "The amount in atomic units to pay for each byte of the resulting transaction size",
-          "example": 2,
-          "default": 1.953125,
-          "format": "double"
-        },
         "sourceAddresses": {
           "type": "array",
           "items": {
             "type": "string",
-            "example": "cashQmjcTGzDqRSufP74GwWTLt11E3saaeRg3LVt5AgEGAiYhpS1yTZA1ti7wVkk7vaQgvKifLvCx4SxwDqfR1EZAYL7yr4WD3",
+            "example": "XT2LD4w2FWZNcRCG4cYxfu8Bd1GjVziQ9Gv8MpK8NdXXg7uwJsbfXoYaGuJT2wqfMPapcjj4gmVasKvXLNnYxrDR1tVjhwwcP",
             "description": "The addresses to draw funds for the transaction from (must be an address in this container). Defaults to every address.",
             "default": "Every address in the container."
           }
@@ -2190,21 +2183,21 @@
         "timestamp": {
           "type": "number",
           "format": "uint64",
-          "example": 1543222082,
+          "example": 1643222082,
           "description": "The unix timestamp of the block this transaction is contained in."
         },
         "unlockTime": {
           "type": "number",
           "format": "uint64",
           "example": 0,
-          "description": "When this transaction unlocks for spending. If >= 50000000, treated as a timestamp. Normally zero."
+          "description": "When this transaction unlocks for spending. If >= 60000000, treated as a timestamp. Normally zero."
         },
         "transfers": {
           "type": "object",
           "properties": {
             "address": {
               "type": "string",
-              "example": "cashQmjcTGzDqRSufP74GwWTLt11E3saaeRg3LVt5AgEGAiYhpS1yTZA1ti7wVkk7vaQgvKifLvCx4SxwDqfR1EZAYL7yr4WD3",
+              "example": "XT2LD4w2FWZNcRCG4cYxfu8Bd1GjVziQ9Gv8MpK8NdXXg7uwJsbfXoYaGuJT2wqfMPapcjj4gmVasKvXLNnYxrDR1tVjhwwcP",
               "description": "The receiving address of this transfer, or the sending address if the amount is negative"
             },
             "amount": {
@@ -2228,7 +2221,7 @@
       "name": "address",
       "required": true,
       "type": "string",
-      "description": "The address to use for this operation. Should be a valid, 98 character XTCASH address."
+      "description": "The address to use for this operation. Should be a valid, 97 character XTE or 98 char XTCASH address."
     },
     "paymentID": {
       "in": "path",
