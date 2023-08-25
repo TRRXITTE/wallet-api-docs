@@ -368,7 +368,7 @@ export default class Topbar extends React.Component {
         <div className="topbar">
           <div className="topbar-wrapper">
             <Link href="#">
-              <img height="30" width="30" className="topbar-logo__img" src={ Logo } alt=""/>
+              <img height="30" width="30" className="topbar-logo__img" src="https://trrxitte.github.io/wallet-api-docs/src/standalone/topbar/logo_small.png" alt=""/>
               <span className="topbar-logo__title">XTE and XTCASH Wallet API Documentation</span>
             </Link>
             <TopbarInsert {...this.props} />
